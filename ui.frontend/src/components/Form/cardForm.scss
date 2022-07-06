@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+.card-form {
+  margin-top: 3rem;
+  padding: 1rem;
+  max-width: 617px;
+  width: 100%;
+  height: 739px;
+
+  background: #ffffff;
+  border-radius: 20px;
+  font-family: 'Inter';
+
+  &__header {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #111111;
+  }
+
+  &__pane {
+    display: none;
+
+    &--active{
+      display: block;
+    }
+  }
+}

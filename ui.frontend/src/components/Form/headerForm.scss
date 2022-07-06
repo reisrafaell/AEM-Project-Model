@@ -1,0 +1,19 @@
+.header-form {
+  font-family: 'Inter';
+
+  &__title {
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: #111111;
+  }
+
+  &__description {
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: #074ee8;
+  }
+}

@@ -1,0 +1,45 @@
+.button-form {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  &__button {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 81px;
+    height: 40px;
+    background: #074ee8;
+    border: #074ee8;
+    border-radius: 4px;
+    cursor: pointer;
+
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.125rem;
+    color: #ffffff;
+
+    &:hover {
+      background: #0945c8;
+      border: #0945c8;
+    }
+
+    &:active {
+      transform: translateY(1px);
+    }
+
+    &::after {
+      content: '\276F';
+    }
+
+    &--finish {
+      &::before {
+        content: '\2714';
+      }
+      &::after {
+        content: none;
+      }
+    }
+  }
+}

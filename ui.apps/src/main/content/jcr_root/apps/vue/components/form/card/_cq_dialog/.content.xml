@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ |  ***********************************************************************
+ |  SPA Vue Project CONFIDENTIAL
+ |  ___________________
+ |
+ |  Copyright 2022 SPA Vue Project
+ |  All Rights Reserved.
+ |
+ |  NOTICE:  All information contained herein is, and remains the property
+ |  of SPA Vue Project and its suppliers, if any. The intellectual and
+ |  technical concepts contained herein are proprietary to SPA Vue Project
+ |  and its suppliers and are protected by trade secret or copyright law.
+ |  Dissemination of this information or reproduction of this material
+ |  is strictly forbidden unless prior written permission is obtained
+ |  from SPA Vue Project.
+ |  ***********************************************************************
+-->
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Vue - Form - Card"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+   <content jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+      <layout jcr:primaryType="nt:unstructured"
+              margin="{Boolean}false"
+              sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+      <items jcr:primaryType="nt:unstructured">
+         <column jcr:primaryType="nt:unstructured"
+                 sling:resourceType="granite/ui/components/coral/foundation/container">
+            <items jcr:primaryType="nt:unstructured">
+               <navTabs composite="{Boolean}true"
+                        fieldLabel="Nav Tabs"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield">
+                  <field cq-msm-lockable="./navTabs"
+                         jcr:primaryType="nt:unstructured"
+                         name="./navTabs"
+                         sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                     <items jcr:primaryType="nt:unstructured">
+                        <tabName fieldLabel="Tab Name"
+                                 jcr:primaryType="nt:unstructured"
+                                 name="./tabName"
+                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                        <buttonName fieldLabel="Button Name"
+                                    jcr:primaryType="nt:unstructured"
+                                    name="./buttonName"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                        <inputs composite="{Boolean}true"
+                              fieldLabel="Inputs"
+                              jcr:primaryType="nt:unstructured"
+                              sling:resourceType="granite/ui/components/coral/foundation/form/multifield">
+                           <field cq-msm-lockable="./inputs"
+                                 jcr:primaryType="nt:unstructured"
+                                 name="./inputs"
+                                 sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                              <items jcr:primaryType="nt:unstructured">
+                                 <required jcr:primaryType="nt:unstructured"
+                                          name="./required"
+                                          sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                          text="Required"
+                                          value="{Boolean}true"/>
+                                 <label fieldLabel="Label Name"
+                                       jcr:primaryType="nt:unstructured"
+                                       name="./label"
+                                       sling:resourceType="granite/ui/components/coral/foundation/form/textfield"/>
+                                 <selectType defaultValue="text"
+                                             fieldLabel="Select Type Input"
+                                             jcr:primaryType="nt:unstructured"
+                                             name="./selectType"
+                                             sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                             value="text">
+                                             <items jcr:primaryType="nt:unstructured">
+                                                <text
+                                                   jcr:primaryType="nt:unstructured"
+                                                   text="Text"
+                                                   value="text"/>
+                                                <email
+                                                   jcr:primaryType="nt:unstructured"
+                                                   text="Email"
+                                                   value="email"/>
+                                                <phone
+                                                   jcr:primaryType="nt:unstructured"
+                                                   text="Phone"
+                                                   value="phone"/>
+                                                <birthday
+                                                   jcr:primaryType="nt:unstructured"
+                                                   text="Birthday"
+                                                   value="birthday"/>
+                                             </items>
+                                 </selectType>
+                              </items>
+                           </field>
+                        </inputs>
+                     </items>
+                  </field>
+               </navTabs>
+            </items>
+         </column>
+      </items>
+   </content>
+</jcr:root>

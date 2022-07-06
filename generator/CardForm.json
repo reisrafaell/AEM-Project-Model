@@ -1,0 +1,125 @@
+{
+  "project-settings": {
+    "code-owner": "SPA Vue Project",
+    "bundle-path": "../core/src/main/java",
+    "test-path": "../core/src/test/java",
+    "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
+    "component-path": "vue",
+    "model-interface-pkg": "com.vue.core.models",
+    "model-impl-pkg": "com.vue.core.models.impl"
+  },
+  "name": "card",
+  "title": "Vue - Form - Card",
+  "group": "SPA Vue Project - Content",
+  "type": "components/form",
+  "options": {
+    "js": false,
+    "jstxt": false,
+    "css": false,
+    "csstxt": false,
+    "html": false,
+    "html-content": false,
+    "slingmodel": true,
+    "testclass": false,
+    "junit-major-version": 5,
+    "content-exporter": true,
+    "model-adaptables": [
+      "request"
+    ],
+    "generic-javadoc": false,
+    "properties": [
+      {
+        "field": "navTabs",
+        "type": "multifield",
+        "label": "Nav Tabs",
+        "model-name": "NavTabs",
+        "use-existing-model": false,
+        "json-expose": true,
+        "items": [
+          {
+            "field": "tabName",
+            "type": "textfield",
+            "label": "Tab Name",
+            "json-expose": true,
+            "json-property": "tabName"
+          },
+          {
+            "field": "buttonName",
+            "type": "textfield",
+            "label": "Button Name",
+            "json-expose": true,
+            "json-property": "buttonName"
+          },
+          {
+            "field": "inputs",
+            "type": "multifield",
+            "label": "Inputs",
+            "model-name": "Inputs",
+            "use-existing-model": false,
+            "json-expose": true,
+            "items": [
+              {
+                "field": "required",
+                "type": "checkbox",
+                "json-expose": true,
+                "attributes": {
+                  "value": "{Boolean}true",
+                  "text": "Required"
+                }
+              },
+              {
+                "field": "label",
+                "type": "textfield",
+                "label": "Label Name",
+                "json-expose": true,
+                "json-property": "label"
+              },
+              {
+                "field": "selectType",
+                "type": "select",
+                "label": "Select Type Input",
+                "json-property": "type",
+                "json-expose": true,
+                "attributes": {
+                  "defaultValue": "text",
+                  "value": "text"
+                },
+                "items": [
+                  {
+                    "field": "text",
+                    "attributes": {
+                      "selected": "true",
+                      "text": "Text",
+                      "value": "text"
+                    }
+                  },
+                  {
+                    "field": "email",
+                    "attributes": {
+                      "text": "Email",
+                      "value": "email"
+                    }
+                  },
+                  {
+                    "field": "phone",
+                    "attributes": {
+                      "text": "Phone",
+                      "value": "phone"
+                    }
+                  },
+                  {
+                    "field": "birthday",
+                    "attributes": {
+                      "text": "Birthday",
+                      "value": "birthday"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }      
+    ]
+  }
+}
